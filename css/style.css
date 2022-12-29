@@ -1756,7 +1756,7 @@ button.swiper-pagination-bullet {
     display: none
 }
 
-.--en .c-ir-content-foot .navigation li: last-of-type {
+.--en .c-ir-content-foot .navigation li:last-of-type {
     visibility:hidden
 }
 
