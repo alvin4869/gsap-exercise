@@ -78,18 +78,15 @@ body {
     letter-spacing: 0.1em;
     line-height: 1.4;
     box-sizing: border-box;
-    opacity: 0
-}
-
-body.is-fixed {
-    overflow: hidden
+    opacity: 0;
+    font-weight: bold;
 }
 
 a {
     text-decoration: none;
     color: #202226;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden
+    backface-visibility: hidden;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -490,16 +487,16 @@ button.swiper-pagination-bullet {
     -webkit-margin-start: var(--swiper-centered-offset-before);
     margin-inline-start:var(--swiper-centered-offset-before)}
 
-.swiper-centered.swiper-horizontal>.swiper-wrapper: :before {
+.swiper-centered.swiper-horizontal>.swiper-wrapper::before {
     height:100%;
-    width: var(--swiper-centered-offset-after)
+    width:var(--swiper-centered-offset-after)
 }
 
 .swiper-centered.swiper-vertical>.swiper-wrapper>.swiper-slide:first-child {
     -webkit-margin-before: var(--swiper-centered-offset-before);
     margin-block-start:var(--swiper-centered-offset-before)}
 
-.swiper-centered.swiper-vertical>.swiper-wrapper: :before {
+.swiper-centered.swiper-vertical>.swiper-wrapper::before {
     width:100%;
     height: var(--swiper-centered-offset-after)
 }
@@ -965,7 +962,7 @@ button.swiper-pagination-bullet {
     width: 10px;
     height: 6px;
     margin-left: 4px;
-    background-image: url("./assets/images/common/icon/icon_arrow_down.svg");
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/common/icon/icon_arrow_down.svg");
     background-size: contain;
     background-repeat: no-repeat
 }
@@ -1883,7 +1880,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.c-ir-nav-foot .c-linkMore.--m .c-linkMore__arrow: after {
+.c-ir-nav-foot .c-linkMore.--m .c-linkMore__arrow:after {
     content:'';
     width: 42px;
     height: 42px;
@@ -2150,7 +2147,7 @@ button.swiper-pagination-bullet {
         padding-right: 0
     }
 
-    .--en .c-ir-nav: :-webkit-scrollbar {
+    .--en .c-ir-nav::-webkit-scrollbar {
         display:none
     }
 }
@@ -2417,17 +2414,17 @@ button.swiper-pagination-bullet {
         transform:translateX(-2px)
     }
 
-    .--en .c-ir-other__nav a: hover:before {
+    .--en .c-ir-other__nav a:hover:before {
         transform:translateX(-2px) scale(0.85)
     }
 }
 
-.--en .c-ir-other__nav a: before {
+.--en .c-ir-other__nav a:before {
     transform:none;
     top: 3px
 }
 
-.--en .c-ir-other__nav a: after {
+.--en .c-ir-other__nav a:after {
     transform:none;
     top: 8px
 }
@@ -2436,7 +2433,7 @@ button.swiper-pagination-bullet {
     justify-content: flex-start
 }
 
-.--en .c-ir-other__nav ul li: nth-of-type(3) {
+.--en .c-ir-other__nav ul li:nth-of-type(3) {
     margin-left:50px
 }
 
@@ -21058,22 +21055,22 @@ button.swiper-pagination-bullet {
 
 .p-top__links-list .item.--vivivi .item__link-img {
     width: 50%;
-    background-image: url("./assets/images/top/img_vivivi.webp");
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_vivivi.webp");
     background-position: center
 }
 
 .no-webp .p-top__links-list .item.--vivivi .item__link-img {
-    background-image: url("./assets/images/top/img_vivivi.jpg")
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_vivivi.jpg")
 }
 
 @media print, screen and (max-width: 768px) {
     .p-top__links-list .item.--vivivi .item__link-img {
         width:100%;
-        background-image: url("./assets/images/top/img_vivivi_sp.webp")
+        background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_vivivi.webp")
     }
 
     .no-webp .p-top__links-list .item.--vivivi .item__link-img {
-        background-image: url("./assets/images/top/img_vivivi_sp.jpg")
+        background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_vivivi.jpg")
     }
 }
 
@@ -21106,12 +21103,12 @@ button.swiper-pagination-bullet {
 }
 
 .p-top__links-list .item.--unique .item__link-img {
-    background-image: url("./assets/images/top/img_unique.webp");
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_unique.webp");
     background-position: center
 }
 
 .no-webp .p-top__links-list .item.--unique .item__link-img {
-    background-image: url("./assets/images/top/img_unique.jpg")
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_unique.jpg")
 }
 
 .p-top__links-list .item.--unique .item__link-content: before {
@@ -21166,7 +21163,7 @@ button.swiper-pagination-bullet {
 }
 
 .p-top__links-list .item.--yougo .item__link {
-    background-image: url("./assets/images/top/img_yougo.webp");
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_yougo.webp");
     background-size: 51.20773% auto;
     background-position: left bottom;
     justify-content: flex-end;
@@ -21174,7 +21171,7 @@ button.swiper-pagination-bullet {
 }
 
 .no-webp .p-top__links-list .item.--yougo .item__link {
-    background-image: url("./assets/images/top/img_yougo.jpg")
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_yougo.jpg")
 }
 
 @media print, screen and (max-width: 768px) {
@@ -21258,12 +21255,12 @@ button.swiper-pagination-bullet {
 }
 
 .p-top__links-list .item.--hr .item__link {
-    background-image: url("./assets/images/top/bg_hr.webp");
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/bg_hr.webp");
     background-position: center bottom
 }
 
 .no-webp .p-top__links-list .item.--hr .item__link {
-    background-image: url("./assets/images/top/bg_hr.jpg")
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/bg_hr.jpg")
 }
 
 @media print, screen and (max-width: 900px) {
@@ -21342,13 +21339,13 @@ button.swiper-pagination-bullet {
 .p-top__links-list .item.--next .item__link {
     padding: 15px;
     display: block;
-    background-image: url("./assets/images/top/img_next.webp");
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_next.webp");
     background-position: center;
     background-size: cover
 }
 
 .no-webp .p-top__links-list .item.--next .item__link {
-    background-image: url("./assets/images/top/img_next.jpg")
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_next.jpg")
 }
 
 @media print, screen and (max-width: 768px) {
@@ -21422,12 +21419,12 @@ button.swiper-pagination-bullet {
 
 .p-top__links-list .item.--partner .item__link {
     display: block;
-    background-image: url("./assets/images/top/bg_partner.webp");
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/bg_partner.webp");
     background-position: center
 }
 
 .no-webp .p-top__links-list .item.--partner .item__link {
-    background-image: url("./assets/images/top/bg_partner.jpg")
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/bg_partner.jpg")
 }
 
 @media print, screen and (max-width: 768px) {
@@ -21489,14 +21486,14 @@ button.swiper-pagination-bullet {
     width: 192px;
     height: 100%;
     flex-shrink: 0;
-    background-image: url("./assets/images/top/img_town.webp");
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_town.webp");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat
 }
 
 .no-webp .p-top__links-list .item.--town .item__link-image {
-    background-image: url("./assets/images/top/img_town.png")
+    background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_town.png")
 }
 
 @media print, screen and (max-width: 1300px) {
