@@ -3082,7 +3082,7 @@ button.swiper-pagination-bullet {
         stroke: #fff
     }
 
-    .c-link-company__list-item .link:hover .c-linkMore.--m .c-linkMore__arrow: after {
+    .c-link-company__list-item .link:hover .c-linkMore.--m .c-linkMore__arrow:after {
         border-width:21px
     }
 }
@@ -3289,7 +3289,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.c-linkMore.--m .c-linkMore__arrow: after {
+.c-linkMore.--m .c-linkMore__arrow:after {
     content:'';
     width: 42px;
     height: 42px;
@@ -3336,7 +3336,7 @@ button.swiper-pagination-bullet {
     transform: rotateZ(180deg)
 }
 
-.c-linkMore.--back .c-linkMore__arrow: after {
+.c-linkMore.--back .c-linkMore__arrow:after {
     right:-26px
 }
 
@@ -6633,7 +6633,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.--en .p-culture__values-list .listItem: nth-of-type(even) {
+.--en .p-culture__values-list .listItem:nth-of-type(even) {
     width:286px
 }
 
@@ -6685,7 +6685,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.--en .p-culture__system-main .slideWrap .swiper .swiper-wrapper .swiper-slide .slideItem__content-list .list__item-title: before {
+.--en .p-culture__system-main .slideWrap .swiper .swiper-wrapper .swiper-slide .slideItem__content-list .list__item-title:before {
     margin-top:5px
 }
 
@@ -10088,7 +10088,7 @@ button.swiper-pagination-bullet {
         stroke: #fff
     }
 
-    .p-ir__msg-link:hover .c-linkMore.--m .c-linkMore__arrow: after {
+    .p-ir__msg-link:hover .c-linkMore.--m .c-linkMore__arrow:after {
         border-width:21px
     }
 }
@@ -10245,7 +10245,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.p-ir__news-inner .link.u-sp .c-linkMore.--m .c-linkMore__arrow: after {
+.p-ir__news-inner .link.u-sp .c-linkMore.--m .c-linkMore__arrow:after {
     border-color:#447FE0
 }
 
@@ -11066,7 +11066,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.--en .p-logoapply__form .wpcf7 .publication .wpcf7-list-item: not(:last-of-type) {
+.--en .p-logoapply__form .wpcf7 .publication .wpcf7-list-item:not(:last-of-type) {
     margin-right:32px
 }
 
@@ -11122,7 +11122,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.p-news-page__wrap.--noImg: before {
+.p-news-page__wrap.--noImg:before {
     display:none
 }
 
@@ -14050,7 +14050,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.--en .p-philosophy__values-list .listItem: nth-of-type(even) {
+.--en .p-philosophy__values-list .listItem:nth-of-type(even) {
     width:296px
 }
 
@@ -14522,7 +14522,7 @@ button.swiper-pagination-bullet {
     font-size: 1.4rem
 }
 
-.--en .p-privacypolicy__anchor-link: nth-of-type(2) {
+.--en .p-privacypolicy__anchor-link:nth-of-type(2) {
     margin-left:38px
 }
 
@@ -17236,7 +17236,7 @@ button.swiper-pagination-bullet {
         stroke: #fff
     }
 
-    .p-recruit__purpose-content:hover .c-linkMore.--m .c-linkMore__arrow: after {
+    .p-recruit__purpose-content:hover .c-linkMore.--m .c-linkMore__arrow:after {
         border-width:21px
     }
 }
@@ -17476,7 +17476,7 @@ button.swiper-pagination-bullet {
         stroke: #fff
     }
 
-    .p-recruit__about-content .culture__content:hover .c-linkMore.--m .c-linkMore__arrow: after {
+    .p-recruit__about-content .culture__content:hover .c-linkMore.--m .c-linkMore__arrow:after {
         border-width:21px
     }
 }
@@ -17821,7 +17821,7 @@ button.swiper-pagination-bullet {
         stroke: #fff
     }
 
-    .p-recruit__engineer-link:hover .c-linkMore.--m .c-linkMore__arrow: after {
+    .p-recruit__engineer-link:hover .c-linkMore.--m .c-linkMore__arrow:after {
         border-width:21px
     }
 }
@@ -18278,7 +18278,7 @@ button.swiper-pagination-bullet {
         stroke: #fff
     }
 
-    .p-recruit__jobList-link:hover .c-linkMore.--m .c-linkMore__arrow: after {
+    .p-recruit__jobList-link:hover .c-linkMore.--m .c-linkMore__arrow:after {
         border-width:21px
     }
 }
@@ -19701,13 +19701,12 @@ button.swiper-pagination-bullet {
 }
 
 .p-top__kv {
-    display: flex;
-    align-items: center;
     width: 100%;
     background-color: #fff;
     position: relative;
     height: calc(100vh - 132px);
-    min-height: 420px
+    min-height: 420px;
+    left: -700px;
 }
 
 @media print, screen and (min-width: 1366px) {
@@ -19730,16 +19729,13 @@ button.swiper-pagination-bullet {
 }
 
 .p-top__kv-list {
-    position: absolute;
-    right: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
+    position: relative;
     width: 3500px;
     will-change: transform;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    padding-top: 60px
+    padding-top: 60px;
+    margin: 0 auto;
 }
 
 @media print, screen and (max-width: 768px) {
@@ -19751,8 +19747,9 @@ button.swiper-pagination-bullet {
 
 .p-top__kv-list li {
     padding-right: 40px;
-    flex-shrink: 0;
-    width: 700px
+    width: 700px;
+    height: 700px;
+    position: absolute;
 }
 
 @media print, screen and (max-width: 768px) {
@@ -20011,7 +20008,7 @@ button.swiper-pagination-bullet {
         stroke: #fff
     }
 
-    .p-top__purpose-content:hover .c-linkMore.--m .c-linkMore__arrow: after {
+    .p-top__purpose-content:hover .c-linkMore.--m .c-linkMore__arrow:after {
         border-width:21px
     }
 }
@@ -20173,7 +20170,7 @@ button.swiper-pagination-bullet {
         stroke: #fff
     }
 
-    .p-top__service-content .inner:hover .c-linkMore.--m .c-linkMore__arrow: after {
+    .p-top__service-content .inner:hover .c-linkMore.--m .c-linkMore__arrow:after {
         border-width:21px
     }
 }
@@ -20381,7 +20378,7 @@ button.swiper-pagination-bullet {
         stroke: #fff
     }
 
-    .p-top__culture-content .inner:hover .c-linkMore.--m .c-linkMore__arrow: after {
+    .p-top__culture-content .inner:hover .c-linkMore.--m .c-linkMore__arrow:after {
         border-width:21px
     }
 }
@@ -20621,7 +20618,7 @@ button.swiper-pagination-bullet {
         stroke: #fff
     }
 
-    .p-top__ir-link .linkItem:hover .c-linkMore.--m .c-linkMore__arrow: after {
+    .p-top__ir-link .linkItem:hover .c-linkMore.--m .c-linkMore__arrow:after {
         border-width:21px
     }
 }
@@ -21111,7 +21108,7 @@ button.swiper-pagination-bullet {
     background-image: url("https://corp.kaonavi.jp/wp/wp-content/themes/kaonavi2022/assets/images/top/img_unique.jpg")
 }
 
-.p-top__links-list .item.--unique .item__link-content: before {
+.p-top__links-list .item.--unique .item__link-content:before {
     content:'';
     position: absolute;
     left: -78px;
@@ -21844,7 +21841,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.--en .p-top__ir: after {
+.--en .p-top__ir:after {
     display:none
 }
 
