@@ -11,8 +11,8 @@
 //   rotationX:360,
 //   duration: 30,
 // })
-gsap.set('.js-kv-slide-item',{
-  x:(i) => i * 700
+gsap.set('.js-kv-slide-item', {
+  x: (i) => i * 700
 })
 gsap.to(".js-kv-slide-item", {
   duration: 25,
@@ -23,38 +23,39 @@ gsap.to(".js-kv-slide-item", {
   },
   repeat: 0
 });
-gsap.set('g [filter="url(#__lottie_element_53)"]',{
-  x:500,
-  y:1400,
-  scale:0.2,
+gsap.set('g [filter="url(#__lottie_element_53)"]', {
+  x: 500,
+  y: 1400,
+  scale: 0.2,
 })
-gsap.set('g [filter="url(#__lottie_element_33)"]',{
-  x:1400,
-  y:1400,
-  scale:0.2,
+gsap.set('g [filter="url(#__lottie_element_33)"]', {
+  x: 1400,
+  y: 1400,
+  scale: 0.2,
 })
-gsap.set('g [filter="url(#__lottie_element_43)"]',{
-  x:1200,
-  y:1300,
-  scale:0.4,
+gsap.set('g [filter="url(#__lottie_element_43)"]', {
+  x: getDistance(),
+  y: 1300,
+  scale: 0.4,
 })
-gsap.set('g [filter="url(#__lottie_element_23)"]',{
-  x:1300,
-  y:1800,
-  scale:0.65,
+gsap.set('g [filter="url(#__lottie_element_23)"]', {
+  x: 1300,
+  y: 1800,
+  scale: 0.65,
 })
-gsap.timeline().to('g [filter="url(#__lottie_element_33)"]',{
-  // rotate:360,
-  transformOrigin:'50% 50%',
-  duration:1,
-  repeat:-1,
-  ease: "none",
-  x:1100,
-  y:1600,
-}).to('g [filter="url(#__lottie_element_33)"]',{
-  x:800,
-  y:1400,
-  duration:1,
-  repeat:-1,
-  ease: "none",
+let timeLine = gsap.timeline().to('g [filter="url(#__lottie_element_33)"]', {
+  rotate: 180,
+  transformOrigin: '-60% 50%',
+  duration: 1.3,
+  repeat: -1,
+  ease: "power4",
+  x: getDistance()
 })
+
+function getDistance() {
+  const arr = $('#1 > g')
+  $(arr).each(function (i , el) {
+    console.log(el);
+  });
+}
+console.log(timeLine);
