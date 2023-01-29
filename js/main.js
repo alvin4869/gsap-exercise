@@ -17,24 +17,40 @@ gsap.set('.js-kv-slide-item', {
 gsap.to(".js-kv-slide-item", {
   duration: 25,
   ease: "none",
-  x: "+=3500", //move each box 500px to right
+  x: "+=3500",
   modifiers: {
-    x: gsap.utils.unitize(x => parseFloat(x) % 3500) //force x value to be between 0 and 500 using modulus
+    x: gsap.utils.unitize(x => parseFloat(x) % 3500)
   },
   repeat: 0
 });
-gsap.set('g [filter="url(#__lottie_element_53)"]', {
-  x: 500,
-  y: 1400,
+
+gsap.timeline().set('g [filter="url(#__lottie_element_53)"]', {
+  x: 75,
+  y: 1365,
   scale: 0.2,
 })
+  .set('g [filter="url(#__lottie_element_33)"]', {
+    x: document.querySelector('g [filter="url(#__lottie_element_53)"]').getBoundingClientRect().width,
+    onComplete: function () {
+      console.log('test1', this.vars.x);
+    }
+  })
+  .to('g [filter="url(#__lottie_element_53)"]', {
+    scale: 0.5,
+    transformOrigin: '0 50%',
+  })
+  .to('g [filter="url(#__lottie_element_33)"]', {
+    x: 87,
+    onComplete: function () {
+      console.log('test2', this.vars.x);
+      console.log('width',document.querySelector('g [filter="url(#__lottie_element_53)"]').getBoundingClientRect().width);
+    }
+  },'<')
 gsap.set('g [filter="url(#__lottie_element_33)"]', {
-  x: 1400,
-  y: 1400,
+  y: 1365,
   scale: 0.2,
 })
 gsap.set('g [filter="url(#__lottie_element_43)"]', {
-  x: getDistance(),
   y: 1300,
   scale: 0.4,
 })
@@ -43,19 +59,10 @@ gsap.set('g [filter="url(#__lottie_element_23)"]', {
   y: 1800,
   scale: 0.65,
 })
-let timeLine = gsap.timeline().to('g [filter="url(#__lottie_element_33)"]', {
-  rotate: 180,
-  transformOrigin: '-60% 50%',
-  duration: 1.3,
-  repeat: -1,
-  ease: "power4",
-  x: getDistance()
-})
-
-function getDistance() {
-  const arr = $('#1 > g')
-  $(arr).each(function (i , el) {
-    console.log(el);
-  });
+function getPosition() {
+  let dom = document.querySelector('g [filter="url(#__lottie_element_53)"]').getBBox()
+  let dom2 = document.querySelector('g [filter="url(#__lottie_element_53)"]').getBoundingClientRect()
+  console.log('dom',dom);
+  console.log('dom2',dom2);
 }
-console.log(timeLine);
+getPosition()
